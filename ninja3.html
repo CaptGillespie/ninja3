@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ninja3</title>
+</head>
+<body>
+    <script>
+        class Ninja{
+            constructor(name, health, speed, strength){
+                this.name= name;
+                this.health = 100;
+                this.speed = 3;
+                this.strength = 3;
+            }
+        }    
+        Ninja.sayName = function(){
+            console.log("My ninja name is " + this.name + "!")
+        }
+        Ninja.showDeets = function(){
+            console.log("Name: " + self.name + ", Health: " + self.health + ", Speed: " + speed + ", Strength: " + strength);
+            }
+        Ninja.drinkSake = function(){
+            this.health += 10;
+            return this;
+        }
+
+
+        class superSensei extends Ninja{
+            
+        }
+    </script>
+</body>
+</html>
